@@ -1,5 +1,7 @@
 package com.company.exception;
 
+
+
 public class IncorrectExpressionException extends RuntimeException{
 
     public IncorrectExpressionException() {

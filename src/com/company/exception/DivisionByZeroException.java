@@ -1,5 +1,7 @@
 package com.company.exception;
 
+
+
 public class DivisionByZeroException extends RuntimeException {
 
     public DivisionByZeroException(String message) {

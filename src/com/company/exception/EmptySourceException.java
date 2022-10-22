@@ -1,5 +1,7 @@
 package com.company.exception;
 
+
+
 public class EmptySourceException extends RuntimeException {
 
     public EmptySourceException() {

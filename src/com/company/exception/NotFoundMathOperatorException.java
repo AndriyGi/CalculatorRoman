@@ -1,5 +1,7 @@
 package com.company.exception;
 
+
+
 public class NotFoundMathOperatorException extends RuntimeException{
 
     public NotFoundMathOperatorException(String message) {

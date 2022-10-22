@@ -1,5 +1,7 @@
 package com.company.utils;
 
+
+
 public class StrUtil {
 
     public static boolean isEmpty(String line) {

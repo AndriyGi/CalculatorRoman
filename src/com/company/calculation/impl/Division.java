@@ -2,6 +2,7 @@ package com.company.calculation.impl;
 
 import com.company.calculation.Calculation;
 
+
 public class Division implements Calculation {
 
     @Override
