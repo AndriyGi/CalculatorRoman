@@ -21,7 +21,8 @@ public class ConverterImpl implements Converter {
                         romanNumber.equalsIgnoreCase(entry.getValue()))
                 .map(Map.Entry::getKey).findFirst();
 
-        return result.orElseThrow(() -> new IncorrectExpressionException());
+        return result.orElseThrow(() -> new IncorrectExpressionException("введенные числа должны быть " +
+                "от I до X"));
     }
 
     @Override

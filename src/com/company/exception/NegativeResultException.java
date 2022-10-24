@@ -9,6 +9,8 @@ public class NegativeResultException extends RuntimeException{
     }
 
     public NegativeResultException() {
-        this("- в результате вычисления получено отрицательное значение");
+        this(" неверныое выражение тк" +
+                "- в результате вычисления получено отрицательное значение," +
+                "- в римской системе нет отрицательных чисел");
     }
 }

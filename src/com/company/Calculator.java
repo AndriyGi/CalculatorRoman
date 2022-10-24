@@ -50,8 +50,12 @@ public class Calculator {
         String mathOperator = inputLine.replaceAll("[0-9a-zA-Zа-яА-Я]"
                 , "");
 
-        if (mathOperator.length() != 1) {
-            throw new IncorrectExpressionException();
+        if (mathOperator.length() < 1) {
+            throw new IncorrectExpressionException(" количество введенных" +
+                    " мат операторов должно быть - 1 " );
+        } else if (mathOperator.length() > 1) {
+            throw new IncorrectExpressionException("формат математической операции " +
+                    "не удовлетворяет заданию - два операнда и один оператор (+, -, /, *)");
         }
 
         String[] arrInput = inputLine.split(mathOperator.contains("*")

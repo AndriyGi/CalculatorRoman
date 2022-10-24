@@ -14,7 +14,9 @@ public class ExpressionValidatorImpl implements ExpressionValidator {
         }
 
         if(StrUtil.isEmpty(array[0]) || StrUtil.isEmpty(array[1])){
-            throw new IncorrectExpressionException();
+            throw new IncorrectExpressionException(" - введенное выражение - неполное");
         }
+
+
     }
 }
